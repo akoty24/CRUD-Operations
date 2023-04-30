@@ -17,7 +17,7 @@ class CrudController extends Controller
             $offer->price=request('price');
             $offer->details=request('details');
             $offer->save();
-            return redirect()->back()->with(['success' =>'added successfuly']);
+            return redirect()->back()->with(['success' =>'offer added successfuly']);
     }
     public function getAllOffers()
     {
@@ -42,10 +42,9 @@ class CrudController extends Controller
         $offer = offer::find($id);  // search in given table id only
         if (!$offer)
             return redirect()->back();
-
         else
 
-            $offer->name=request('name');
+        $offer->name=request('name');
         $offer->price=request('price');
         $offer->details=request('details');
         $offer->save();

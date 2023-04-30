@@ -13,8 +13,7 @@ Route::group(
     ],
     function(){
         Route::get('/', function () {
-            return view('welcome');
-        });
+            return view('welcome');});
     Route::get('/all',[CrudController::class,'getAllOffers'])->name('all offers');
     Route::get('/create',[CrudController::class,'create'])->name('offers.create');
     Route::post('/store',[CrudController::class,'store'])->name('offers.store');

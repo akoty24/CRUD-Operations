@@ -137,7 +137,7 @@
 
 </table>
 
-<a href="{{route('offers.create',$offer -> id)}}" class="btn btn-block">go to add a new offer</a>
+
 
 </body>
 </html>

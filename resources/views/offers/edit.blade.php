@@ -113,23 +113,23 @@
             @csrf
 
             <div class="form-group">
-                <label for="exampleInputText">{{__('messages.offer name')}}</label>
-                <input type="text" id="name" name="name" class="form-control"value="{{$offer->name}}" placeholder="{{__('messages.offer name')}}">
+                <label for="exampleInputText">{{__('messages.Offer Name')}}</label>
+                <input type="text" id="name" name="name" class="form-control"value="{{$offer->name}}" placeholder="{{__('messages.Offer Name')}}">
                 @error('name')
                 <small class="form-text text-danger">{{$message}}</small>
                 @enderror
             </div>
             <div class="form-group">
-                <label for="exampleInputPassword1">{{__('messages.offer price')}}</label>
-                <input type="text" name="price" class="form-control" value="{{$offer->price}}" placeholder="{{__('messages.offer price')}}">
+                <label for="exampleInputPassword1">{{__('messages.Offer Price')}}</label>
+                <input type="text" name="price" class="form-control" value="{{$offer->price}}" placeholder="{{__('messages.Offer Price')}}">
                 @error('price')
                 <small class="form-text text-danger">{{$message}}</small>
                 @enderror
 
             </div>
             <div class="form-group">
-                <label for="exampleInputText">{{__('messages.offer details')}}</label>
-                <input type="text" name="details" class="form-control" value="{{$offer->details}}"placeholder="{{__('messages.offer details')}}">
+                <label for="exampleInputText">{{__('messages.Offer details')}}</label>
+                <input type="text" name="details" class="form-control" value="{{$offer->details}}"placeholder="{{__('messages.Offer details')}}">
                 @error('details')
                 <small class="form-text text-danger">{{$message}}</small>
                 @enderror
